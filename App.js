@@ -1,6 +1,7 @@
 import React from 'react';
 import {SafeAreaView, StatusBar} from 'react-native';
 import {Deck} from './src/components/Deck';
+import {DeckClass} from './src/components/DeckClass';
 import {Card} from './src/components/common/Card';
 
 const DATA = [
@@ -58,7 +59,13 @@ const App = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <Deck
+        {/* <Deck
+          data={DATA}
+          renderData={renderCard}
+          onSwipeLeft={onSwipeLeft}
+          onSwipeRight={onSwipeRight}
+        /> */}
+        <DeckClass
           data={DATA}
           renderData={renderCard}
           onSwipeLeft={onSwipeLeft}

@@ -29,7 +29,7 @@ export const Deck = ({
       toValue: {x, y: 0},
       duration: SWIPE_OUT_DURATION,
       // Pass in a callback function into the start() for something that happens after the animation is finished
-    }).start(() => onSwipeComplete(direction).bind(this));
+    }).start(() => onSwipeComplete(direction));
   };
 
   const onSwipeComplete = (direction) => {
